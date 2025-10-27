@@ -1,13 +1,17 @@
 import Image from "next/image";
+import Categories from "../components/Categories"
+import PropertiesList from "@/components/properties/PropertiesList"
 
 export default function Home() {
   return (
-    <div className="mt-30">
-      <div className="bg-black h-96 w-96 p-6">
-        <div className="bg-yellow-300 h-full w-full rounded-full">
-
-        </div>
+    <div className="mt-30 px-18">
+      <div>
+        <Categories/>
       </div>
+      <div className="mt-10">
+        <PropertiesList/>
+      </div>
+      
     </div>
   );
 }
