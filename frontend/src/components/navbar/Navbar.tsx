@@ -7,7 +7,7 @@ import SearchFilter from "./SearchFilter";
 
 export default function Navbar() {
   return (
-    <header className="fixed w-full left-0 top-0">
+    <header className="fixed w-full left-0 top-0 z-10">
       <div className="flex items-center px-18 bg-white border-b border-neutral-300 h-24">
         <div className="flex items-center justify-between w-full ">
           <Link href="/">

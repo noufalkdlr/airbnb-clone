@@ -4,7 +4,7 @@ import PropertiesList from "@/components/properties/PropertiesList"
 
 export default function Home() {
   return (
-    <div className="mt-30 px-18">
+    <div>
       <div>
         <Categories/>
       </div>

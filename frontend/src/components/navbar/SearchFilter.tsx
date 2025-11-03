@@ -24,7 +24,7 @@ export default function SearchFilter() {
         </div>
       </div>
       <div className="h-full ">
-          <div className="bg-pink-500 w-14 h-full rounded-full" ></div>
+          <div className="bg-primary w-14 h-full rounded-full" ></div>
       </div>
       
     </div>
