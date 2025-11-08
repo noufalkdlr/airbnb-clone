@@ -2,7 +2,10 @@ import Image from "next/image";
 import Categories from "../components/Categories"
 import PropertiesList from "@/components/properties/PropertiesList"
 
+
 export default function Home() {
+
+
   return (
     <div>
       <div>

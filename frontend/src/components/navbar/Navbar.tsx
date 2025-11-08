@@ -8,9 +8,14 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import SearchFilter from "./SearchFilter";
 import MenuLink from "./MenuLink";
+import { useSelector } from "react-redux";
+
+import { RootState } from "@/redux/store";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const username = useSelector((state: RootState)=> state.auth.username)
 
   return (
     <header className="fixed w-full left-0 top-0 z-10">
@@ -23,7 +28,8 @@ export default function Navbar() {
             <SearchFilter />
           </div>
 
-          <div className="relative">
+          <div className="relative flex items-center gap-4">
+            <p>{username}</p>
             <div className="flex justify-between w-28 gap-3 items-center border border-neutral-300 rounded-full px-2 py-2">
               <RxHamburgerMenu onClick={()=> setIsOpen(!isOpen)} className="text-2xl ml-2 cursor-pointer" />
 
